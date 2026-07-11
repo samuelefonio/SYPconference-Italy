@@ -6,9 +6,9 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
     <link rel="apple-touch-icon" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
     <link rel="stylesheet" type="text/css" media="all" href="assets/main.css"/>
-    <script type="text/javascript" async
+    <!-- <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=default">
-    </script>
+    </script> -->
     <meta name="description" content="Peace and Security at a Crossroads">
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
@@ -53,286 +53,309 @@
 
     <h2>Conference Program</h2>
 
-    <!-- <table>
-        <tr>
-            <td class="date" rowspan="2">
-                8:30am
-            </td>
-            <td class="title-special">
-                Registration and Coffee &amp; Tea!
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s a section in the program that isn&rsquo;t a talk. 
-                Notice that the title is styled differently than the ones for talks.
-            </td>
-        </tr>
-    </table>
+    <div class="day-switcher" role="tablist" aria-label="Conference days">
+        <button class="day-button is-active" type="button" data-day="day-1" aria-selected="true">Day 1</button>
+        <button class="day-button" type="button" data-day="day-2" aria-selected="false">Day 2</button>
+        <button class="day-button" type="button" data-day="day-3" aria-selected="false">Day 3</button>
+    </div>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:00am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s where you put the abstract of the talk. Notice that with MathJax you can include mathematical notation in the abstract like \(f(x)=3x-7\) or like \(h^0(X_t,\omega_{X_t}^{\otimes m})\) or whatever you want. Just notice the MathJax line in the head of this HTML document that allows this. I&rsquo;m going to blab just a tiny bit more in this abstract, but all the other abstracts below, except the ones for the plenary talks, will be just <i>Lorem Ipsum</i> text that needs to be replaced by real abstracts.
-            </td>
-        </tr>
-    </table>
+    <div class="program-day" id="day-1" data-day-panel>
+        <div class="day-heading">Day 1</div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">8:30 AM - 9:00 AM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Arrival, Registration</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">9:00 AM - 10:00 AM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Welcome session &amp; “What is Pugwash”</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">10:00 AM - 11:30 AM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Keynote Session: Past, Present and Future of Non-Proliferation and Arms Control: What has changed in 2026</summary>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Chair:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Keynote 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Keynote 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">11:30 AM - 11:45 AM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Coffee Break</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">11:45 AM - 1:00 PM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Panel Session #1: Nuclear Weapons and European Security</summary>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Chair:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 3:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 4:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">1:00 PM - 2:00 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Lunch</div>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">2:00 PM - 2:30 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Free Time</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">2:30 PM - 4:30 PM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Working Groups Activity</summary>
+                    <div class="session-subtitle">SYP Team</div>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Group 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Facilitator:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Group 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Facilitator:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Group 3:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Facilitator:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">4:30 PM - 4:45 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Coffee Break</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">4:45 PM - 6:00 PM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Panel Session #2: What is Pugwash: The role of Scientists in Policy-Making</summary>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Chair:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 3:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 4:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">6:00 PM - 8:00 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Free Time</div>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">8:00 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Dinner</div>
+            </div>
+        </div>
+    </div>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:25am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
+    <div class="program-day" id="day-2" data-day-panel hidden>
+        <div class="day-heading">Day 2</div>
+        <div class="schedule-item">
+            <div class="schedule-time">9:00 AM - 10:15 AM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Panel Session #3: Nuclear Security Landscape in 2026 and Beyond: Emerging Technology and Nuclear Terrorism</summary>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Chair:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 3:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 4:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">10:15 AM - 10:30 AM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Coffee Break</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">10:30 AM - 11:45 AM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Panel Session #4: European Technological Leadership: Opportunities and Challenges</summary>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Chair:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 3:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 4:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">11:45 AM - 1:00 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Poster Session</div>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">1:00 PM - 2:30 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Lunch</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">2:30 PM - 4:30 PM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Working Groups Activity</summary>
+                    <div class="session-subtitle">SYP Team</div>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Group 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Facilitator:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Group 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Facilitator:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Group 3:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Facilitator:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">4:30 PM - 4:45 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Coffee Break</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">4:45 PM - 6:00 PM</div>
+            <div class="schedule-content">
+                <details class="session-accordion">
+                    <summary class="schedule-title">Panel Session #5: The Involvement of Civil Society for Nuclear Disarmament</summary>
+                    <div class="session-details">
+                        <div class="session-detail-line"><strong>Chair:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 1:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 2:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 3:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Talk 4:</strong> TBD</div>
+                        <div class="session-detail-line"><strong>Speaker:</strong> TBD</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">6:00 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Closing Remarks</div>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">6:00 PM - 8:00 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Free Time / Debrief</div>
+            </div>
+        </div>
+        <div class="schedule-item is-break">
+            <div class="schedule-time">8:00 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Dinner</div>
+            </div>
+        </div>
+        <div class="schedule-item">
+            <div class="schedule-time">9:00 PM - 10:30 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">USPID Roundtable</div>
+            </div>
+        </div>
+    </div>
 
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                9:50am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                10:15am
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                10:40am
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                 Kept for Spacing 
-            </td>
-        </tr>
-    </table>
-
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
-                11:00am
-            </td>
-            <td class="title">
-                This is a Plenary Talk!
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Here&rsquo;s the abstract for the plenary talk! Notice again that the formatting of this time-block is a bit different that the rest of of the talks.
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                Noon
-            </td>
-            <td class="title-special">
-                Lunch
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                 Kept for Spacing
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:30pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                1:55pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table>
-        <tr>
-            <td class="date" rowspan="2">
-                2:50pm
-            </td>
-            <td class="title-special">
-                Coffee &amp; Tea Break
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                 Kept for Spacing 
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                3:10pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table id="PUTSPEAKERNAMEHERE">
-        <tr>
-            <td class="date" rowspan="3">
-                3:35pm
-            </td>
-            <td class="title">
-                Interesting Title of a Talk 
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Speaker Name (University)
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table>
-
-    <table class="plenary">
-        <tr>
-            <td class="date" rowspan="3">
-                4:00pm
-            </td>
-            <td class="title">
-                This is Another Plenary Talk!
-            </td>
-        </tr>
-        <tr>
-            <td class="speaker">
-                Plenary Speaker
-            </td>
-        </tr>
-        <tr>
-            <td class="abstract">
-                Filler text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim et est et euismod. Fusce et metus tempus, pellentesque ex at, convallis nulla. Ut fringilla commodo tincidunt. Fusce sed est eu massa placerat iaculis eu at mauris. Nullam ut mollis nisi, quis malesuada risus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ipsum tortor, suscipit non tincidunt vel, bibendum in libero. Nulla facilisi. Pellentesque vitae neque metus. Cras quis est pharetra, vestibulum nisl et, viverra ipsum. Etiam porta dignissim purus, quis tempor metus volutpat eu. Praesent pulvinar libero eget purus tincidunt finibus.
-            </td>
-        </tr>
-    </table> -->
+    <div class="program-day" id="day-3" data-day-panel hidden>
+        <div class="day-heading">Day 3</div>
+        <div class="schedule-item">
+            <div class="schedule-time">10:30 AM - 12:30 PM</div>
+            <div class="schedule-content">
+                <div class="schedule-title">Euro SYP Assembly</div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         &copy; Conference Organizers
         &nbsp;|&nbsp; For information: <a href="mailto:sypitalia@gmail.com">sypitalia@gmail.com</a>
     </footer>
+
+    <script>
+        const dayButtons = document.querySelectorAll('.day-button');
+        const dayPanels = document.querySelectorAll('[data-day-panel]');
+
+        function showDay(dayId) {
+            dayPanels.forEach((panel) => {
+                panel.hidden = panel.id !== dayId;
+            });
+
+            dayButtons.forEach((button) => {
+                const isSelected = button.dataset.day === dayId;
+                button.classList.toggle('is-active', isSelected);
+                button.setAttribute('aria-selected', String(isSelected));
+            });
+
+            if (location.hash !== `#${dayId}`) {
+                history.replaceState(null, '', `#${dayId}`);
+            }
+        }
+
+        dayButtons.forEach((button) => {
+            button.addEventListener('click', () => showDay(button.dataset.day));
+        });
+
+        const initialDay = (location.hash || '#day-1').slice(1);
+        showDay(document.getElementById(initialDay) ? initialDay : 'day-1');
+
+        window.addEventListener('hashchange', () => {
+            const nextDay = (location.hash || '#day-1').slice(1);
+            if (document.getElementById(nextDay)) {
+                showDay(nextDay);
+            }
+        });
+    </script>
 
 </body>
 </html>
